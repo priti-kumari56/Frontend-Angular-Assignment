@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" method="get">
+
+        <label>Name*</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Address</label>
+        <input type="text" name="address"><br><br>
+
+        <label>Zip Code*</label>
+        <input type="text" name="zip" placeholder="enter a 5-digit code" maxlength="5" required><br><br>
+
+        <label>Country*</label>
+        <select name="country" required>
+            <option value="">Please select...</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+        </select><br><br>
+
+        <label>Gender*</label>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label>Preferences*</label>
+        <input type="checkbox" name="color" value="red"> Red
+        <input type="checkbox" name="color" value="green" checked> Green
+        <input type="checkbox" name="color" value="blue"> Blue<br><br>
+
+        <label>Phone*</label>
+        <input type="tel" name="phone" required><br><br>
+
+        <label>Email*</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Password*</label>
+        <input type="password" name="password" placeholder="6-8 characters" minlength="6" maxlength="8" required><br><br>
+
+        <label>Verify Password*</label>
+        <input type="password" name="verify_password" required><br><br>
+
+        <label>Birthday*</label>
+        <input type="date" name="birthday" required><br><br>
+
+        <label>Appointment*</label>
+        <input type="time" name="appointment" required><br><br>
+
+        <label></label>
+        <input type="submit" value="SEND">
+        <input type="reset" value="CLEAR">
+
+    </form>
+
+</body>
+</html>
