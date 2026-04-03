@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Form</title>
+  </head>
+  <body>
+    <h3 style="text-align: center">
+      Please complete all the information below.
+    </h3>
+    <fieldset>
+      <legend><h2>Sign Up Here</h2></legend>
+      <form>
+        <table align="center">
+          <tr>
+            <td>
+              <label for="name"><strong>Name:</strong></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                required
+                placeholder="First Name"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                required
+                placeholder="Last Name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email"><strong>Email:</strong></label>
+            </td>
+            <td>
+              <label for="contact"><strong>Contact:</strong></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter the email"
+              />
+            </td>
+            <td>
+              <input
+                type="tel"
+                id="contact"
+                name="contact"
+                required
+                placeholder="EX-1234567890"
+                pattern="[0-9]{10}"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password"><strong>Set password:</strong></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder="New password"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="profile"><strong>Profile:</strong></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="file" id="profile" name="profile" />
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="submit" /></td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>
