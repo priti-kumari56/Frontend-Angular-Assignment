@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Mania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: yellow;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .content {
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 8px;
+            vertical-align: middle;
+        }
+        label {
+            font-weight: bold;
+        }
+        .outlet-label {
+            color: goldenrod;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .menu-label {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .extra-label {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .highlight {
+            color: goldenrod;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .pizza-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        del {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <header>&#127829;Pizza mania&#127829;</header>
+
+    <div class="content">
+
+        <fieldset>
+            <legend><h2>&#127829;Pizza Order Here&#127829;</h2></legend>
+
+            <form action="" method="post">
+
+                <table>
+                    <tr>
+                        <td><label>First Name:</label></td>
+                        <td><input type="text" name="firstname" placeholder="First Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Last Name</label></td>
+                        <td><input type="text" name="lastname" placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email:</label></td>
+                        <td><input type="email" name="email" placeholder="abc@example.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Contact:</label></td>
+                        <td><input type="tel" name="contact" placeholder="Ex-8989898989"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Preferred Delivery Date:</label></td>
+                        <td><input type="date" name="deliverydate"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Size:</label></td>
+                        <td>
+                            Small <input type="radio" name="size" value="small">
+                            Medium <input type="radio" name="size" value="medium">
+                            Large <input type="radio" name="size" value="large">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="outlet-label">Outlet:</label></td>
+                        <td>
+                            <select name="outlet">
+                                <option value="">Select Outlet</option>
+                                <option value="outlet1">Outlet 1</option>
+                                <option value="outlet2">Outlet 2</option>
+                                <option value="outlet3">Outlet 3</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+                <p class="menu-label">Menu&#8595;</p>
+
+                <table>
+                    <tr>
+                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2VHmWiC6OZjLI_TMK3vp2xi8bWjMvMmGfMA&s" class="pizza-img"></td>
+
+                        <td>
+                            <input type="checkbox" name="pizza" value="hawaiian">
+                            <b>Hawaiian(150.00 &#8377; <del>170.00&#8377;</del>)</b>
+                        </td>
+                        <td>
+                            <select name="hawaiian_qty">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.hunts.com/sites/g/files/qyyrlu211/files/uploadedImages/img_6934_48664.jpg" class="pizza-img"></td>
+                        <td>
+                            <input type="checkbox" name="pizza" value="pepperoni">
+                            <b>Pepperoni(140.00 &#8377; <del>160.00&#8377;</del>)</b>
+                        </td>
+                        <td>
+                            <select name="pepperoni_qty">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://kristineskitchenblog.com/wp-content/uploads/2024/12/veggie-pizza-recipe-09-2-500x500.jpg" class="pizza-img"></td>
+                        <td>
+                            <input type="checkbox" name="pizza" value="vegetable">
+                            <b>Vegetable(130.00 &#8377; <del>150.00&#8377;</del>)</b>
+                        </td>
+                        <td>
+                            <select name="vegetable_qty">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+                <p class="extra-label">Extra Details:&#8595;</p>
+
+                <table>
+                    <tr>
+                        <td>&#128179;</td>
+                        <td><label>Credit Card:</label></td>
+                        <td><input type="text" name="creditcard" placeholder="1234-5678-9123-1111"></td>
+                        <td><input type="button" value="Verify Card"></td>
+                    </tr>
+                    <tr>
+                        <td>&#128205;</td>
+                        <td><label>Pin:</label></td>
+                        <td><input type="text" name="pin" placeholder="421604"></td>
+                    </tr>
+                    <tr>
+                        <td>&#128444;</td>
+                        <td><label class="highlight">Upload photo for discount:</label></td>
+                        <td><input type="file" name="photo"></td>
+                    </tr>
+                    <tr>
+                        <td>&#128203;</td>
+                        <td><label class="highlight">Additional Note:</label></td>
+                        <td><textarea name="note" rows="4" cols="30" placeholder="If any additional Requirement There Please Mention Here."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>&#11088;</td>
+                        <td><label class="highlight">Rating:</label></td>
+                        <td><input type="range" name="rating" min="1" max="5"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td align="right"><input type="submit" value="Submit Order"></td>
+                    </tr>
+                </table>
+
+            </form>
+        </fieldset>
+
+    </div>
+
+</body>
+</html>
