@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="Weather_Task19.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">🌤️</span>
+        <span class="logo-text">Weather Now</span>
+      </div>
+      <button class="units-btn">⚙️ Units ⌄</button>
+    </header>
+
+    <section class="hero">
+      <h1>How's the sky looking today?</h1>
+      <div class="search-container">
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Search for a place...">
+        </div>
+        <button class="search-btn">Search</button>
+      </div>
+    </section>
+
+    <main class="dashboard-grid">
+      
+      <div class="left-panel">
+        
+        <div class="current-weather">
+          <div class="weather-info">
+            <h2>Berlin, Germany</h2>
+            <p>Tuesday, Aug 5, 2025</p>
+          </div>
+          <div class="weather-temp">
+            <span class="temp-icon">☀️</span>
+            <span class="temp-value">20°</span>
+          </div>
+        </div>
+
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-label">Feels Like</span>
+            <span class="metric-value">18°</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Humidity</span>
+            <span class="metric-value">46%</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Wind</span>
+            <span class="metric-value">14 km/h</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Precipitation</span>
+            <span class="metric-value">0 mm</span>
+          </div>
+        </div>
+
+        <div class="daily-section">
+          <h3>Daily forecast</h3>
+          <div class="daily-grid">
+            <div class="daily-card">
+              <span class="day">Tue</span>
+              <span class="icon">🌧️</span>
+              <div class="high-low"><span>20°</span><span class="low">14°</span></div>
+            </div>
+            <div class="daily-card">
+              <span class="day">Wed</span>
+              <span class="icon">☁️</span>
+              <div class="high-low"><span>21°</span><span class="low">15°</span></div>
+            </div>
+            <div class="daily-card">
+              <span class="day">Thu</span>
+              <span class="icon">☀️</span>
+              <div class="high-low"><span>24°</span><span class="low">14°</span></div>
+            </div>
+            <div class="daily-card">
+              <span class="day">Fri</span>
+              <span class="icon">⛅</span>
+              <div class="high-low"><span>25°</span><span class="low">13°</span></div>
+            </div>
+            <div class="daily-card">
+              <span class="day">Sat</span>
+              <span class="icon">🌩️</span>
+              <div class="high-low"><span>21°</span><span class="low">15°</span></div>
+            </div>
+            <div class="daily-card">
+              <span class="day">Sun</span>
+              <span class="icon">🌧️</span>
+              <div class="high-low"><span>25°</span><span class="low">16°</span></div>
+            </div>
+            <div class="daily-card">
+              <span class="day">Mon</span>
+              <span class="icon">🌫️</span>
+              <div class="high-low"><span>24°</span><span class="low">15°</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="right-panel">
+        <div class="hourly-card">
+          <div class="hourly-header">
+  <h3>Hourly forecast</h3>
+    <select class="day-select">
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+        <option value="thursday">Thursday</option>
+        <option value="friday">Friday</option>
+        <option value="saturday">Saturday</option>
+        <option value="sunday">Sunday</option>
+        <option value="monday">Monday</option>
+    </select>
+</div>
+          
+          <div class="hourly-list">
+            <div class="hourly-item">
+              <div class="time-icon"><span class="icon">☁️</span> 3 PM</div>
+              <div class="temp">20°</div>
+            </div>
+            <div class="hourly-item">
+              <div class="time-icon"><span class="icon">⛅</span> 4 PM</div>
+              <div class="temp">20°</div>
+            </div>
+            <div class="hourly-item">
+              <div class="time-icon"><span class="icon">☀️</span> 5 PM</div>
+              <div class="temp">20°</div>
+            </div>
+            <div class="hourly-item">
+              <div class="time-icon"><span class="icon">☁️</span> 6 PM</div>
+              <div class="temp">19°</div>
+            </div>
+            <div class="hourly-item">
+              <div class="time-icon"><span class="icon">🌧️</span> 7 PM</div>
+              <div class="temp">18°</div>
+            </div>
+            <div class="hourly-item">
+              <div class="time-icon"><span class="icon">🌫️</span> 8 PM</div>
+              <div class="temp">18°</div>
+            </div>
+            <div class="hourly-item">
+              <div class="time-icon"><span class="icon">🌧️</span> 9 PM</div>
+              <div class="temp">17°</div>
+            </div>
+            <div class="hourly-item">
+              <div class="time-icon"><span class="icon">☁️</span> 10 PM</div>
+              <div class="temp">17°</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
